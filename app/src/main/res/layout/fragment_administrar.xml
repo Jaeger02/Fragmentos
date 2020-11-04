@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".gui.Categorias"
+    tools:context=".gui."
     android:clipChildren="false"
     android:clipToPadding="false">
 
@@ -45,7 +45,7 @@
         android:layout_marginTop="?attr/actionBarSize"
         android:elevation="8dp"
         android:fillViewport="true"
-        android:id="@+id/gridCategorias"
+        android:id="@+id/gridAdministrar"
         android:verticalScrollbarPosition="defaultPosition"
         android:background="@color/productGridBackgroundColor"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
@@ -59,15 +59,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
-                android:text="Categorias"
+                android:text="Administrar"
                 android:textAlignment="textStart" />
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/rclvCategorias" />
+                android:id="@+id/rclvAdministrar" />
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab_cart_add"
+        style="@style/Widget.Design.FloatingActionButton"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="15dp"
+        android:elevation="10dp"
+        android:src="@drawable/ic_add"
+        app:elevation="10dp"/>
 
 
 </FrameLayout>

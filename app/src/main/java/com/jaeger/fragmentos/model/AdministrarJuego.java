@@ -1,32 +1,30 @@
 package com.jaeger.fragmentos.model;
 
-import java.util.Objects;
+public class AdministrarJuego {
 
-public class Juego {
-
-    private int idJuego;
+    private int idMiJuego;
     private String imagen;
     private String titulo;
     private int clasificacion;
-    private String descripcion;
+    private String Descripcion;
 
-    public Juego() {
+    public AdministrarJuego() {
     }
 
-    public Juego(int idJuego, String imagen, String titulo, int clasificacion, String descripcion) {
-        this.idJuego = idJuego;
+    public AdministrarJuego(int idMiJuego, String imagen, String titulo, int clasificacion, String descripcion) {
+        this.idMiJuego = idMiJuego;
         this.imagen = imagen;
         this.titulo = titulo;
         this.clasificacion = clasificacion;
-        this.descripcion = descripcion;
+        Descripcion = descripcion;
     }
 
-    public int getIdJuego() {
-        return idJuego;
+    public int getIdMiJuego() {
+        return idMiJuego;
     }
 
-    public void setIdJuego(int idJuego) {
-        this.idJuego = idJuego;
+    public void setIdMiJuego(int idMiJuego) {
+        this.idMiJuego = idMiJuego;
     }
 
     public String getImagen() {
@@ -54,23 +52,10 @@ public class Juego {
     }
 
     public String getDescripcion() {
-        return descripcion;
+        return Descripcion;
     }
 
     public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Juego juego = (Juego) o;
-        return idJuego == juego.idJuego;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(idJuego);
+        Descripcion = descripcion;
     }
 }
