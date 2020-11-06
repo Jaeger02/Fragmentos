@@ -87,6 +87,9 @@ public class Categorias extends Fragment {
         categorias.add(new CategoriaJuego(5, "iconofamiliar", "Familiar"));
         categorias.add(new CategoriaJuego(6, "iconopeleas", "Peleas"));
         categorias.add(new CategoriaJuego(7, "iconorol", "Rol"));
+        categorias.add(new CategoriaJuego(8, "iconorol", "Rol"));
+        categorias.add(new CategoriaJuego(9, "iconorol", "Rol"));
+        categorias.add(new CategoriaJuego(10, "iconorol", "Rol"));
 
         binding.rclvCategorias.setHasFixedSize(true);
         LinearLayoutManager layoutManager = new LinearLayoutManager(context, RecyclerView.VERTICAL, false);
